@@ -1,0 +1,1 @@
+import{j as e,F as a,a as r}from"./renderer/_default.page.client.jsx.645220bd.js";function o(){return e(a,{children:[r("h1",{children:"About"}),r("p",{children:"A colored page."})]})}export{o as Page};

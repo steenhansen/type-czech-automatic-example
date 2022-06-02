@@ -1,0 +1,51 @@
+{
+  "renderer/_default.page.client.jsx": {
+    "file": "assets/renderer\\_default.page.client.jsx.645220bd.js",
+    "src": "renderer/_default.page.client.jsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "renderer/_error.page.jsx",
+      "pages/about/index.page.jsx",
+      "pages/index/index.page.jsx",
+      "renderer/_default.page.server.jsx"
+    ],
+    "css": [
+      "assets/renderer\\_default.page.client.jsx.2942c7fb.css"
+    ],
+    "assets": [
+      "assets/logo.bebe2e90.svg"
+    ]
+  },
+  "renderer/_error.page.jsx": {
+    "file": "assets/_error.page.4b409cf2.js",
+    "src": "renderer/_error.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "pages/about/index.page.jsx": {
+    "file": "assets/index.page.63313cac.js",
+    "src": "pages/about/index.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ],
+    "css": [
+      "assets/index.page.de42b54a.css"
+    ]
+  },
+  "pages/index/index.page.jsx": {
+    "file": "assets/index.page.b16c3e34.js",
+    "src": "pages/index/index.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "renderer/_default.page.server.jsx": {
+    "file": "assets/_default.page.server.b9ccad82.js",
+    "src": "renderer/_default.page.server.jsx",
+    "isDynamicEntry": true
+  }
+}
