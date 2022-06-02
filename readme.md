@@ -103,7 +103,8 @@ PRE_JSX_Counter() PRE-FUNC: Property 'init_count' is indicated to be a 'number',
 ```
 
 ## Turned Off NOP TypeCzech Code
-The extra code TypeCzech adds, eventhough turned off in the file https://type-czech-canonical.herokuapp.com/assets/index.page.6d1f7fb1.js, is 623 bytes as below. You can see the error message the is console logged when run locally.
+The extra code TypeCzech adds, eventhough the file https://type-czech-canonical.herokuapp.com/assets/index.page.6161d9bf.js is
+turned off, is 623 bytes as below. You can see the error message the is console logged when run locally, "!!!! init_count is not 1 but instead ..."
 
 
 ```
