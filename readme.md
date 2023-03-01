@@ -1,7 +1,7 @@
 
 # Type-Czech-Canonical
-Type-czech-canonical, [https://type-czech-canonical.herokuapp.com/](https://type-czech-canonical.herokuapp.com/) a 
-slow to start free Heroku site, exists to show how
+Type-czech-canonical, [https://type-czech-canonical.onrender.com/](https://type-czech-canonical.onrender.com/) a 
+slow to start free Render.com site, exists to show how
 easy it is to add runtime type checking to a Javascript project. 
 The live version has TypeCzech turned off, but it has an illustrative type error in a JSX component.
 The initial counter is an erroneous string of "1" instead of the correct number of 1, which causes the incorrect output of "Counter 111111..."
