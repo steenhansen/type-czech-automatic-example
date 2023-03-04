@@ -125,3 +125,10 @@ To run the program with TypeCzech on
 To run the program without TypeCzech
   - npm run prod
   - http://localhost:3000/
+
+## Free Hosting on render.com
+	Web Service
+	
+	Settings
+		Build Command	$ yarn; yarn build
+		Start Command	$ node ./server
