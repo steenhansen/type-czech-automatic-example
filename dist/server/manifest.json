@@ -17,32 +17,32 @@
     "isDynamicEntry": true
   },
   "pages/about/index.page.jsx": {
-    "file": "assets/index.page.388c79a7.js",
+    "file": "assets/index.page.2b5b45c5.js",
     "src": "pages/about/index.page.jsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/index.page.201e0cf8.css"
+      "assets/index.page.170ea3eb.css"
     ]
   },
   "pages/index/index.page.jsx": {
-    "file": "assets/index.page.854f6197.js",
+    "file": "assets/index.page.ca3cc44f.js",
     "src": "pages/index/index.page.jsx",
     "isDynamicEntry": true
   },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/_default.page.client.9d02e95e.js",
+    "file": "assets/_default.page.client.4e98a46e.js",
     "src": "renderer/_default.page.client.jsx",
     "isDynamicEntry": true
   },
   "renderer/_default.page.server.jsx": {
-    "file": "assets/_default.page.server.3b794341.js",
+    "file": "assets/_default.page.server.38ff9033.js",
     "src": "renderer/_default.page.server.jsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/_default.page.server.a7a282ee.css"
+      "assets/_default.page.server.f3175ad4.css"
     ],
     "assets": [
-      "assets/logo.bebe2e90.svg"
+      "assets/logo.0ab59a12.svg"
     ]
   }
 }

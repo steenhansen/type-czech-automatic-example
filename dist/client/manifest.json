@@ -1,6 +1,6 @@
 {
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer\\_default.page.client.jsx.645220bd.js",
+    "file": "assets/renderer\\_default.page.client.jsx.f4c8e821.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "dynamicImports": [
@@ -10,14 +10,14 @@
       "renderer/_default.page.server.jsx"
     ],
     "css": [
-      "assets/renderer\\_default.page.client.jsx.2942c7fb.css"
+      "assets/renderer\\_default.page.client.jsx.eae827cc.css"
     ],
     "assets": [
-      "assets/logo.bebe2e90.svg"
+      "assets/logo.0ab59a12.svg"
     ]
   },
   "renderer/_error.page.jsx": {
-    "file": "assets/_error.page.4b409cf2.js",
+    "file": "assets/_error.page.3807ecd2.js",
     "src": "renderer/_error.page.jsx",
     "isDynamicEntry": true,
     "imports": [
@@ -25,7 +25,7 @@
     ]
   },
   "pages/about/index.page.jsx": {
-    "file": "assets/index.page.63313cac.js",
+    "file": "assets/index.page.a4ed7f33.js",
     "src": "pages/about/index.page.jsx",
     "isDynamicEntry": true,
     "imports": [
@@ -36,7 +36,7 @@
     ]
   },
   "pages/index/index.page.jsx": {
-    "file": "assets/index.page.b16c3e34.js",
+    "file": "assets/index.page.98c0db87.js",
     "src": "pages/index/index.page.jsx",
     "isDynamicEntry": true,
     "imports": [

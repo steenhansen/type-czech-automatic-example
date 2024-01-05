@@ -1,19 +1,16 @@
 {
-  "name": "type-czech-automatic",
-  "description": "Automatic runtime type checking example",
+  "name": "type-czech-canonical",
+  "description": "Bare bones React SSR Type-Czech runtime type checking example",
   "version": "1.0.0",
   "scripts": {
     "start": "npm run prod",
-    
-    "dev":  "npm run make-tc-dev    && npm run server",
-    "prod": "npm run make-tc-prod   && npm run build && npm run server:prod",
-
-    "make-tc-dev":  "node ./node_modules/type-czech/make_tc_dev.js",
+    "dev": "npm run make-tc-dev                    && npm run server-dev",
+    "prod": "npm run make-tc-prod && npm run build-prod && npm run server-prod",
+    "make-tc-dev": "node ./node_modules/type-czech/make_tc_dev.js",
     "make-tc-prod": "node ./node_modules/type-czech/make_tc_prod.js",
-
-    "build": "vite build && vite build --ssr",
-    "server": "node ./server",
-    "server:prod": "cross-env NODE_ENV=production node ./server"
+    "build-prod": "vite build && vite build --ssr",
+    "server-dev": "node ./server",
+    "server-prod": "cross-env NODE_ENV=production node ./server"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^1.2.0",
@@ -22,7 +19,7 @@
     "express": "^4.17.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "type-czech": "^1.4.0",
+    "type-czech": "^1.5.3",
     "vite": "^2.8.4",
     "vite-plugin-ssr": "^0.3.64"
   }

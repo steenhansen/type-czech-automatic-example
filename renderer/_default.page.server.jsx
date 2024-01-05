@@ -18,7 +18,7 @@ async function render(pageContext) {
 
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext;
-  const title = (documentProps && documentProps.title) || "Canonical Type-Czech";
+  const title = (documentProps && documentProps.title) || "type-czech-canonical";
   const desc = (documentProps && documentProps.description) || "App using Vite + vite-plugin-ssr";
 
   const documentHtml = escapeInject`<!DOCTYPE html>

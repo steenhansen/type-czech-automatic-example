@@ -28,7 +28,7 @@ function _interopDefaultLegacy(e) {
 }
 var ReactDOMServer__default = /* @__PURE__ */ _interopDefaultLegacy(ReactDOMServer);
 var React__default = /* @__PURE__ */ _interopDefaultLegacy(React);
-var logoUrl = "/assets/logo.bebe2e90.svg";
+var logoUrl = "/assets/logo.0ab59a12.svg";
 var PageShell$1 = "";
 const Context = React__default["default"].createContext(void 0);
 function PageContextProvider({
@@ -146,7 +146,7 @@ async function render(pageContext) {
   const {
     documentProps
   } = pageContext;
-  const title = documentProps && documentProps.title || "Automatic Type-Czech";
+  const title = documentProps && documentProps.title || "Canonical Type-Czech";
   const desc = documentProps && documentProps.description || "App using Vite + vite-plugin-ssr";
   const documentHtml = vitePluginSsr.escapeInject`<!DOCTYPE html>
     <html lang="en">

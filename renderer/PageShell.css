@@ -17,3 +17,12 @@ a {
 .navitem.is-active {
   background-color: #eee;
 }
+
+#type-czech-toggle {
+  color: #ccc;
+  font-size: smaller;
+}
+
+pre {
+  background-color: #ddd;
+}
