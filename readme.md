@@ -58,4 +58,4 @@ PRE_JSX_Counter() PRE-FUNC: Property 'init_count' is indicated to be a 'number',
 	
 	Settings
 		Build Command	$ yarn; yarn build
-		Start Command	$ node ./server
+		Start Command	$ node ./server-dev
