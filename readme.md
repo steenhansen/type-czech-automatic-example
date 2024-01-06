@@ -1,10 +1,13 @@
 
+
+<a id="fast-start"></a>
+
 # Type-Czech-Canonical
 
 This is a barebones example of [Type-Czech](https://github.com/steenhansen/type-czech#fast-start) JavaScript runtime type checking with React SSR on NodeJs.
 
 
-This example is live on Render.com as a slow free hosted site that takes 80-180 seconds to start [https://type-czech-canonical.onrender.com/](https://type-czech-canonical.onrender.com/). 
+This example is live on Render.com as a slow to start, free hosted site that takes 30-180 seconds to resume [https://type-czech-canonical.onrender.com/](https://type-czech-canonical.onrender.com/). 
 It exists to show how easy it is to add runtime type checking to an SSR Javascript project. 
 The live version has TypeCzech turned on, with an illustrative type error in a JSX component erroring to both NodeJs and the browser.
 The initial counter is an erroneous string of "1" instead of the correct number of 1, which causes the incorrect output of "Counter 111111..."
