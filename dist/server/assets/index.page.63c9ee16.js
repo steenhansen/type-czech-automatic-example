@@ -24,19 +24,19 @@ if (typeof window !== "undefined") {
 var TypeCzech_obj = the_exports;
 const { TypeCzech } = TypeCzech_obj;
 const type_czech = TypeCzech(["CONSOLE-COUNT", "LOG-ERRORS"]);
-function PRE_JSX_CounterInc(Counter_props, _react_1_browser_nodejs, _react_2_only_nodejs) {
+function PRE_CounterInc(Counter_props, _react_1_browser_nodejs, _react_2_only_nodejs) {
   const function_params = [Counter_props, _react_1_browser_nodejs, _react_2_only_nodejs];
   if (type_czech.isNode()) {
     const short_node_signature = { init_count: "number" };
     const bad_require_nodejs = type_czech.checkParam_typeExtra(Counter_props, short_node_signature);
     if (bad_require_nodejs !== "")
-      return type_czech.check_assert(bad_require_nodejs + " \n 			 Node.js : PRE_JSX_CounterInc :{ init_count: 'number' } ");
+      return type_czech.check_assert(bad_require_nodejs + " \n 			 Node.js : PRE_CounterInc :{ init_count: 'number' } ");
   } else {
     const browser_signature = [{ init_count: "number" }, "object"];
     return type_czech.checkParam_typeExtra(function_params, browser_signature);
   }
 }
-CounterInc = type_czech.linkUp(CounterInc, PRE_JSX_CounterInc);
+CounterInc = type_czech.linkUp(CounterInc, PRE_CounterInc);
 const typeCzech_on_off = type_czech.isPruned() ? "Type-Czech is OFF" : "Type-Czech is ON";
 function CounterInc({
   init_count
@@ -55,21 +55,12 @@ function CounterInc({
 }
 function Page() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
-    children: [/* @__PURE__ */ jsxRuntime.jsx(CounterInc, {
-      init_count: 1
-    }), /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), "React SSR component CounterInc() expects numbers, not strings.", /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), "With string to number type error :", /* @__PURE__ */ jsxRuntime.jsx("br", {}), '<CounterInc init_count = { "1" } />            results in ', /* @__PURE__ */ jsxRuntime.jsx("button", {
-      type: "botton",
-      children: "Counter_inc 11111"
-    }), /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), "With no type error :", /* @__PURE__ */ jsxRuntime.jsx("br", {}), "<CounterInc init_count = { 1 } />      results in ", /* @__PURE__ */ jsxRuntime.jsx("button", {
-      type: "botton",
-      children: "Counter_inc 17"
-    }), /* @__PURE__ */ jsxRuntime.jsxs("ul", {
-      children: [/* @__PURE__ */ jsxRuntime.jsx("li", {
-        children: 'With a type error -  <CounterInc init_count = { "1" } />       -- '
-      }), /* @__PURE__ */ jsxRuntime.jsx("li", {
-        children: "With a type error -  <CounterInc init_count = { 1 } />       -- "
-      })]
-    }), /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), "When the 'Counter_inc' button is clicked, a type error causes the button to change incorrectly to 'Counter 11111' instead of the correct 'Counter 2'.", /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), 'The problem is that a string of "1" is used instead of the proper number of 1.', /* @__PURE__ */ jsxRuntime.jsx("br", {})]
+    children: [/* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx(CounterInc, {
+      init_count: "1"
+    }), /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), "This is a barebones example of ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+      href: "https://github.com/steenhansen/type-czech",
+      children: "Type-Czech"
+    }), " JavaScript runtime type checking with React SSR.", /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), "The component 'Counter_inc 1' above expects numbers, not strings, for addition when clicked.", /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), "Type errors are reported in both NodeJs and the browser console, when (Type-Czech is ON).", /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {}), /* @__PURE__ */ jsxRuntime.jsx("br", {})]
   });
 }
 exports.Page = Page;

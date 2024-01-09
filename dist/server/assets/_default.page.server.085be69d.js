@@ -1,23 +1,4 @@
 "use strict";
-var __defProp = Object.defineProperty;
-var __defProps = Object.defineProperties;
-var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var __getOwnPropSymbols = Object.getOwnPropertySymbols;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __propIsEnum = Object.prototype.propertyIsEnumerable;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (__hasOwnProp.call(b, prop))
-      __defNormalProp(a, prop, b[prop]);
-  if (__getOwnPropSymbols)
-    for (var prop of __getOwnPropSymbols(b)) {
-      if (__propIsEnum.call(b, prop))
-        __defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 var ReactDOMServer = require("react-dom/server");
 var React = require("react");
@@ -47,9 +28,10 @@ function usePageContext() {
 function Link(props) {
   const pageContext = usePageContext();
   const className = [props.className, pageContext.urlPathname === props.href && "is-active"].filter(Boolean).join(" ");
-  return /* @__PURE__ */ jsxRuntime.jsx("a", __spreadProps(__spreadValues({}, props), {
+  return /* @__PURE__ */ jsxRuntime.jsx("a", {
+    ...props,
     className
-  }));
+  });
 }
 function PageShell({
   pageContext,
@@ -66,8 +48,12 @@ function PageShell({
             children: "Home"
           }), /* @__PURE__ */ jsxRuntime.jsx(Link, {
             className: "navitem",
-            href: "/about",
-            children: "About"
+            href: "/type-error",
+            children: "Type-Error"
+          }), /* @__PURE__ */ jsxRuntime.jsx(Link, {
+            className: "navitem",
+            href: "/resources",
+            children: "Resources"
           })]
         }), /* @__PURE__ */ jsxRuntime.jsx(Content, {
           children
@@ -141,12 +127,14 @@ async function render(pageContext) {
   } = pageContext;
   const pageHtml = ReactDOMServer__default["default"].renderToString(/* @__PURE__ */ jsxRuntime.jsx(PageShell, {
     pageContext,
-    children: /* @__PURE__ */ jsxRuntime.jsx(Page, __spreadValues({}, pageProps))
+    children: /* @__PURE__ */ jsxRuntime.jsx(Page, {
+      ...pageProps
+    })
   }));
   const {
     documentProps
   } = pageContext;
-  const title = documentProps && documentProps.title || "Canonical Type-Czech";
+  const title = documentProps && documentProps.title || "type-czech-canonical";
   const desc = documentProps && documentProps.description || "App using Vite + vite-plugin-ssr";
   const documentHtml = vitePluginSsr.escapeInject`<!DOCTYPE html>
     <html lang="en">

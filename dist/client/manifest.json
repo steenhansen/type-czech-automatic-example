@@ -1,46 +1,55 @@
 {
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer\\_default.page.client.jsx.f4c8e821.js",
+    "file": "assets/renderer\\_default.page.client.jsx.5fe36631.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "dynamicImports": [
       "renderer/_error.page.jsx",
-      "pages/about/index.page.jsx",
       "pages/index/index.page.jsx",
+      "pages/resources/index.page.jsx",
+      "pages/type-error/index.page.jsx",
       "renderer/_default.page.server.jsx"
     ],
     "css": [
-      "assets/renderer\\_default.page.client.jsx.eae827cc.css"
+      "assets/renderer\\_default.page.client.jsx.a3695e69.css"
     ],
     "assets": [
       "assets/logo.0ab59a12.svg"
     ]
   },
   "renderer/_error.page.jsx": {
-    "file": "assets/_error.page.3807ecd2.js",
+    "file": "assets/_error.page.acd3b882.js",
     "src": "renderer/_error.page.jsx",
     "isDynamicEntry": true,
     "imports": [
       "renderer/_default.page.client.jsx"
     ]
   },
-  "pages/about/index.page.jsx": {
-    "file": "assets/index.page.a4ed7f33.js",
-    "src": "pages/about/index.page.jsx",
+  "pages/index/index.page.jsx": {
+    "file": "assets/index.page.b4cc3e2b.js",
+    "src": "pages/index/index.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "pages/resources/index.page.jsx": {
+    "file": "assets/index.page.8befb785.js",
+    "src": "pages/resources/index.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "pages/type-error/index.page.jsx": {
+    "file": "assets/index.page.c8833086.js",
+    "src": "pages/type-error/index.page.jsx",
     "isDynamicEntry": true,
     "imports": [
       "renderer/_default.page.client.jsx"
     ],
     "css": [
-      "assets/index.page.de42b54a.css"
-    ]
-  },
-  "pages/index/index.page.jsx": {
-    "file": "assets/index.page.98c0db87.js",
-    "src": "pages/index/index.page.jsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "renderer/_default.page.client.jsx"
+      "assets/index.page.fc9be685.css"
     ]
   },
   "renderer/_default.page.server.jsx": {
